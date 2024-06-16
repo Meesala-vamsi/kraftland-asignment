@@ -1,0 +1,244 @@
+
+
+.main-heading{
+    font-size: 40px;
+    margin-bottom: 1px;
+}
+
+.weather-card-container{
+    color: #fff;
+    padding: 20px;
+    background-color: #0000004b;
+    border-radius: 20px;
+}
+.dark-card-container{
+    color: #fff;
+    padding: 20px;
+    background-color: #ffffff4f;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+.weather-main-container{
+    width: 70%;
+    animation: fadeIn 3s;
+}
+
+.cloud-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+.cloud-container p{
+    font-size: 29px;
+    align-self: center;
+    margin-right: 130px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.cloud-container .cloud-icon{
+    font-size: 80px;
+    color: #bfdbf7;
+    align-self: center;
+}
+.temp-container{
+    display: flex;
+    gap: 27px;
+}
+.details-container{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-container p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+.loader-container{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.temp-container span{
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+.temp-icon-container p{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.temp-icon-container .arrow-icon{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.temp-increase-decrease-container{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-top: 1px;
+}
+.temp-icon-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.list-container{
+    padding: 0px;
+    margin-top: 0;
+}
+
+.list-container .list-items{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    font-size: 20px;
+    margin: 0; /* Ensure no margin */
+    padding: 5px 0; /* Optional padding for better readability */
+    line-height: 0; 
+}
+
+.list-items .list-icon{
+    font-weight: bold;
+    margin: 0; /* Ensure no margin */
+    padding: 0;
+}
+
+.extended-forecast-container{
+    color: #fff;
+    width: 100%;
+}
+
+.extended-forecast-container h1{
+    font-size: 20px;
+}
+
+.forecast-temp{
+    display: flex;
+}
+
+.day-desc{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.forecast-list-container .forecast-list-items{
+    background-color: #0000004b;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.forecast-list-container .dark-forecast-list-items{
+    background-color: #ffffff54;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+
+
+@media screen and (max-width:768px){
+    .atmosphere-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-main-container{
+        width: 95%;
+    }
+    .cloud-container{
+        width: 100%;
+    }
+    .cloud-container p{
+        align-self: flex-start;
+        font-size: 22px;
+        margin-right: 0;
+    }
+
+    .weather-card-container{
+        padding: 15px;
+    }
+
+    .main-heading{
+        font-size: 19px;
+    }
+
+    .day-desc{
+        font-size: 14px;
+    }
+    .details-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.forecast-list-container{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    padding: 0px;
+    gap: 14px;
+    overflow-x: scroll;
+}
+
+.light-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light-container .light-icon {
+    font-size: 34px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 2.9s;
+}
+
+.light-container .dark-mode {
+    transform: rotate(360deg);
+}
+
+.light-container .hello {
+    transform: rotate(-360deg);
+}
+
+
+
+@media screen and (min-width:768px){
+    .atmosphere-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .forecast-list-container::-webkit-scrollbar{
+        display: none;
+    }
+    
+}
